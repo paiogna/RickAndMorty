@@ -46,7 +46,7 @@ body {
 
 .number {
     grid-area: number;
-    font-size:26px;
+    font-size:60px;
     background-image: url('../img/giphy.gif');
     background-size: 77%;
     background-position: center;
@@ -54,6 +54,8 @@ body {
     background-color: transparent;
     border: none;
     text-align:center;
+    color: black;
+    font-weight: 800;
 }
 
 .button {
