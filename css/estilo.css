@@ -1,0 +1,120 @@
+* {padding: 0;margin: 0;}
+
+.fontFamily {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+body {
+    background-image: url("../img/fondo1.jpeg");
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logoRyM {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+} 
+
+.logoRyM img {
+    width:50%;
+}
+
+.introNumber {
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: 10% 60% 10%;
+    grid-template-areas: 'introduce'
+                        'number'
+                        'button';
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    height: 500px;
+}
+
+.introduce {
+    grid-area: introduce;
+    font-size: 25px;
+    text-align:center;
+}
+
+.number {
+    grid-area: number;
+    font-size:26px;
+    background-image: url('../img/giphy.gif');
+    background-size: 77%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    text-align:center;
+}
+
+.button {
+    grid-area: button;
+    background-color: black;
+    color: white;
+    border-radius: 8%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    width: 50%;
+    place-self: center;
+}
+
+.close {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+.modal-body {
+    background-color: black;
+    place-self: cover;
+}
+
+.modal-body div img {
+    border-radius:50%;
+}
+
+.modal-body div h5 {
+    color: greenyellow;
+}
+
+.modal-header {
+    background-color: black;
+}
+
+.modal-body {
+    background-color: black;
+    background-image: url("../img/fondo1.jpeg");
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        height: 550px;
+    }
+    
+    .introNumber {
+        grid-template-columns: 80%;
+        grid-template-rows: 20% 50% 10%;
+        height: 400px;
+    }
+    
+    .introduce {
+        font-size: 15px;
+    }
+
+    .number {
+        font-size:26px;
+        background-size: 100%;
+    }
+    
+}
+
+
