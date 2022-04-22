@@ -99,13 +99,13 @@ body {
 
 @media screen and (max-width: 415px) {
     body {
-        height: 550px;
+        height: 600px;
     }
     
     .introNumber {
         grid-template-columns: 80%;
-        grid-template-rows: 20% 50% 10%;
-        height: 400px;
+        grid-template-rows: 20% 60% 10%;
+        height: 450px;
     }
     
     .introduce {
